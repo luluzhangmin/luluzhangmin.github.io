@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcom to My Blog</title>
+    <link>https://luluzhangmin.github.io/</link>
+    <description>Recent content on Welcom to My Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Copyright (c) 2021, all rights reserved.</copyright>
+    <lastBuildDate>Tue, 30 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://luluzhangmin.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Build a Hugo Blog in Windows 10</title>
+      <link>https://luluzhangmin.github.io/post/first/</link>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://luluzhangmin.github.io/post/first/</guid>
+      <description>Prepare the Environment Step 1. Install and Configure Github  Visit https://git-scm.com/downloads and download Git. Install Git, all options are selected by default. Register Git account and configure Key. Please Baidu or Goole for detailed operation.  Step 2. Install and Configure Hugo Download the Hugo Tool  Visit https://github.com/gohugoio/hugo/releases and download Git. Unzip the file package.  Configure environment variables for hugo  Click the local PC and right-click, click Properties.</description>
+    </item>
+    
+    <item>
+      <title>Deploy the Blog to GitHub Pages</title>
+      <link>https://luluzhangmin.github.io/post/second/</link>
+      <pubDate>Tue, 30 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://luluzhangmin.github.io/post/second/</guid>
+      <description>Step 1. Create Repository   Log in to https://github.com.
+  Click the &amp;ldquo;+&amp;rdquo; in the upper right corner and select New repository.
+  Enter the domain name under Repository name
+ xx.github.io
+  For example: luluzhangmin.gothub.io   Select the Public and Add a README file options, and click Create repository.
+  Click Settings in the navigation bar, select the master branch under Source, and click Save.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="Personal blog." />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.82.0" />
+
+<link rel="canonical" href="https://luluzhangmin.github.io/post/first/">
+<meta property="og:title" content="Build a Hugo Blog in Windows 10" />
+<meta property="og:description" content="Prepare the Environment Step 1. Install and Configure Github  Visit https://git-scm.com/downloads and download Git. Install Git, all options are selected by default. Register Git account and configure Key. Please Baidu or Goole for detailed operation.  Step 2. Install and Configure Hugo Download the Hugo Tool  Visit https://github.com/gohugoio/hugo/releases and download Git. Unzip the file package.  Configure environment variables for hugo  Click the local PC and right-click, click Properties." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://luluzhangmin.github.io/post/first/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-30T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-03-30T00:00:00&#43;00:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Build a Hugo Blog in Windows 10"/>
+<meta name="twitter:description" content="Prepare the Environment Step 1. Install and Configure Github  Visit https://git-scm.com/downloads and download Git. Install Git, all options are selected by default. Register Git account and configure Key. Please Baidu or Goole for detailed operation.  Step 2. Install and Configure Hugo Download the Hugo Tool  Visit https://github.com/gohugoio/hugo/releases and download Git. Unzip the file package.  Configure environment variables for hugo  Click the local PC and right-click, click Properties."/>
+
+
+<meta itemprop="name" content="Build a Hugo Blog in Windows 10">
+<meta itemprop="description" content="Prepare the Environment Step 1. Install and Configure Github  Visit https://git-scm.com/downloads and download Git. Install Git, all options are selected by default. Register Git account and configure Key. Please Baidu or Goole for detailed operation.  Step 2. Install and Configure Hugo Download the Hugo Tool  Visit https://github.com/gohugoio/hugo/releases and download Git. Unzip the file package.  Configure environment variables for hugo  Click the local PC and right-click, click Properties."><meta itemprop="datePublished" content="2021-03-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-03-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="308">
+<meta itemprop="keywords" content="" />
+
+<link rel="stylesheet" href="https://luluzhangmin.github.io/css/layout.css" />
+
+
+<link rel="stylesheet" href="https://luluzhangmin.github.io/css/default-dark.css" />
+
+
+
+
+<title>
+
+
+     Build a Hugo Blog in Windows 10 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://luluzhangmin.github.io/">Welcom to My Blog</a>
+    </div> 
+
+    
+    
+    <a class="nav-item active" href="https://luluzhangmin.github.io/post/"><div class="nav-item-title">Posts</div></a>
+    
+    <a class="nav-item" href="https://luluzhangmin.github.io/tags/"><div class="nav-item-title">Tags</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:myemail"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/github%20id" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/twitter%20id" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> Build a Hugo Blog in Windows 10 </h1>
+    <div class="content"> <h1 id="prepare-the-environment">Prepare the Environment</h1>
+<h2 id="step-1-install-and-configure-github">Step 1. Install and Configure Github</h2>
+<ol>
+<li>Visit <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a> and download Git.</li>
+<li>Install Git, all options are selected by default.</li>
+<li>Register Git account and configure Key. Please Baidu or Goole for detailed operation.</li>
+</ol>
+<h2 id="step-2-install-and-configure-hugo">Step 2. Install and Configure Hugo</h2>
+<h3 id="download-the-hugo-tool">Download the Hugo Tool</h3>
+<ol>
+<li>Visit <a href="https://github.com/gohugoio/hugo/releases">https://github.com/gohugoio/hugo/releases</a> and download Git.</li>
+<li>Unzip the file package.</li>
+</ol>
+<h3 id="configure-environment-variables-for-hugo">Configure environment variables for hugo</h3>
+<ol>
+<li>Click the local PC and right-click, click Properties.</li>
+<li>Select &ldquo;Advanced System Settings&gt; Environment Variables&rdquo;.</li>
+<li>Select &ldquo;Path&rdquo; under User Variables and click &ldquo;Edit&rdquo;.</li>
+<li>Click &ldquo;New&rdquo;. Create a new storage path for hugo, click &ldquo;Ok&rdquo;.</li>
+<li>Open the CMD, execute the command &ldquo;hugo version&rdquo;, the hugo version information is displayed, the tool is installed successfully.</li>
+</ol>
+<h1 id="deploy-a-hugo-blog-locally">Deploy a Hugo Blog Locally</h1>
+<ol>
+<li>
+<p>Enter the directory of the custom hugo name, here is the directory &ldquo;E:\hugo&rdquo; as an example.</p>
+</li>
+<li>
+<p>Right-click and select &ldquo;Git Bash Here&rdquo;.</p>
+</li>
+<li>
+<p>Execute the flllowing command to create a new blog file.</p>
+<blockquote>
+<p><strong>hugo new site</strong> <em>blogname</em></p>
+</blockquote>
+<pre><code> For example: hugo new site myblog
+</code></pre>
+</li>
+<li>
+<p>Execute the flllowing command to enter myblog file.</p>
+<blockquote>
+<p><strong>cd themename</strong></p>
+</blockquote>
+<pre><code> For example: cd myblog
+</code></pre>
+</li>
+<li>
+<p>Log in to <a href="https://themes.gohugo.io/tags/documentation/">https://themes.gohugo.io/tags/documentation/</a> to choose your favorite theme.</p>
+</li>
+<li>
+<p>Click &ldquo;Download&rdquo; to enter the &ldquo;Code&rdquo; page of github.</p>
+</li>
+<li>
+<p>Click the &ldquo;Code&rdquo; button and select copy under the &ldquo;HTTPS&rdquo; protocol.</p>
+</li>
+<li>
+<p>In the Git tool box,  Execute the following command to download the blog theme to the local.</p>
+<blockquote>
+<p><strong>git clone</strong> <em>theme address</em> <strong>theme</strong>/<em>theme&rsquo;s name</em></p>
+</blockquote>
+<pre><code> For example: git clone https://github.com/gyorb/hugo-dusk.git themes/lulu
+</code></pre>
+</li>
+<li>
+<p>Execute the following command to aggregate the pages.</p>
+<blockquote>
+<p><strong>hugo new post/<em><strong>xx</strong></em>.md</strong></p>
+</blockquote>
+<pre><code> For example: hugo new post/first.md
+</code></pre>
+</li>
+<li>
+<p>Use Markdown to edit the document, the document format is &ldquo;xxx.md&rdquo;, and then put the document in &ldquo;post&rdquo;.</p>
+</li>
+<li>
+<p>Execute the following command to start the blog locally and run it.</p>
+<blockquote>
+<p><strong>hugo server -t</strong> <em>theme&rsquo;s name</em>  <strong>&ndash;buildDrafts</strong></p>
+</blockquote>
+<pre><code> For example: hugo server -t lulu --buildDrafts
+</code></pre>
+</li>
+<li>
+<p>Enter the address &ldquo;http://local:1313&rdquo; to visit yourself blog, The information displayed here is the document information edited by yourself.</p>
+</li>
+</ol>
+ </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+</div>
+
+    <div class="date"> 2021-03-30 </div>
+    
+  </div>
+</footer>
+
+
+  
+  
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:myemail"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/github%20id" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/twitter%20id" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://luluzhangmin.github.io/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright"> Copyright (c) 2021, all rights reserved. </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+

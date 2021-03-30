@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta name="description" content="Personal blog." />
+<meta name="keywords" content="" />
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.82.0" />
+
+<link rel="canonical" href="https://luluzhangmin.github.io/post/second/">
+<meta property="og:title" content="Deploy the Blog to GitHub Pages" />
+<meta property="og:description" content="Step 1. Create Repository   Log in to https://github.com.
+  Click the &ldquo;&#43;&rdquo; in the upper right corner and select New repository.
+  Enter the domain name under Repository name
+ xx.github.io
+  For example: luluzhangmin.gothub.io   Select the Public and Add a README file options, and click Create repository.
+  Click Settings in the navigation bar, select the master branch under Source, and click Save." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://luluzhangmin.github.io/post/second/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-03-30T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2021-03-30T00:00:00&#43;00:00" />
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Deploy the Blog to GitHub Pages"/>
+<meta name="twitter:description" content="Step 1. Create Repository   Log in to https://github.com.
+  Click the &ldquo;&#43;&rdquo; in the upper right corner and select New repository.
+  Enter the domain name under Repository name
+ xx.github.io
+  For example: luluzhangmin.gothub.io   Select the Public and Add a README file options, and click Create repository.
+  Click Settings in the navigation bar, select the master branch under Source, and click Save."/>
+
+
+<meta itemprop="name" content="Deploy the Blog to GitHub Pages">
+<meta itemprop="description" content="Step 1. Create Repository   Log in to https://github.com.
+  Click the &ldquo;&#43;&rdquo; in the upper right corner and select New repository.
+  Enter the domain name under Repository name
+ xx.github.io
+  For example: luluzhangmin.gothub.io   Select the Public and Add a README file options, and click Create repository.
+  Click Settings in the navigation bar, select the master branch under Source, and click Save."><meta itemprop="datePublished" content="2021-03-30T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2021-03-30T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="322">
+<meta itemprop="keywords" content="" />
+
+<link rel="stylesheet" href="https://luluzhangmin.github.io/css/layout.css" />
+
+
+<link rel="stylesheet" href="https://luluzhangmin.github.io/css/default-dark.css" />
+
+
+
+
+<title>
+
+
+     Deploy the Blog to GitHub Pages 
+
+</title>
+
+</head>
+
+
+<body>
+<div class="main">
+<header>
+
+<div class="header-bar">
+
+  <nav>
+    <div class="siteTitle">
+      <a href="https://luluzhangmin.github.io/">Welcom to My Blog</a>
+    </div> 
+
+    
+    
+    <a class="nav-item active" href="https://luluzhangmin.github.io/post/"><div class="nav-item-title">Posts</div></a>
+    
+    <a class="nav-item" href="https://luluzhangmin.github.io/tags/"><div class="nav-item-title">Tags</div></a>
+    
+
+  </nav>
+
+  
+<div class="social-links-header">
+
+  
+  <a href="mailto:myemail"><div class="social-link">email</div></a>
+  
+
+  
+  <a href="https://github.com/github%20id" target="_blank"><div class="social-link">gh</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/twitter%20id" target="_blank"><div class="social-link">twtr</div></a>
+  
+
+  
+
+</div>
+
+
+</div>
+
+
+</header>
+
+
+<article class="post">
+    <h1 class="title"> Deploy the Blog to GitHub Pages </h1>
+    <div class="content"> <h2 id="step-1-create-repository">Step 1. Create Repository</h2>
+<ol>
+<li>
+<p>Log in to <a href="https://github.com">https://github.com</a>.</p>
+</li>
+<li>
+<p>Click the &ldquo;+&rdquo; in the upper right corner and select <strong>New repository</strong>.</p>
+</li>
+<li>
+<p>Enter the domain name under <strong>Repository name</strong></p>
+<blockquote>
+<p>xx.github.io</p>
+</blockquote>
+<pre><code>   For example: luluzhangmin.gothub.io
+</code></pre>
+</li>
+<li>
+<p>Select the <strong>Public</strong> and <strong>Add a README file</strong> options, and click <strong>Create repository</strong>.</p>
+</li>
+<li>
+<p>Click <strong>Settings</strong> in the navigation bar, select the master branch under <strong>Source</strong>, and click <strong>Save</strong>.</p>
+</li>
+<li>
+<p>Modify the local &ldquo;config.toml file.&rdquo;, Modify the value of baseUrl to the set domain name.</p>
+<pre><code>For example: baseUrl = &quot;https://luluzhangmin.github.io&quot;
+</code></pre>
+</li>
+</ol>
+<h2 id="step-2-deploy-the-blog-to-github">Step 2. Deploy the Blog to GitHub</h2>
+<ol>
+<li>
+<p>Execute the following command in the root directory of the site To generate a &ldquo;public&rdquo; directory.</p>
+<blockquote>
+<p>**hugo &ndash;theme=**<em>theme name</em> <strong>&ndash;baseUrl=&ldquo;https://<em><strong>nickname</strong></em>.github.io/&rdquo; &ndash;buildDrafts</strong></p>
+</blockquote>
+<pre><code>For example: hugo --theme=lulu --baseUrl=&quot;https://luluzhangmin.github.io/&quot; --buildDrafts
+</code></pre>
+</li>
+<li>
+<p>Execute the following command to enter the directory.</p>
+<blockquote>
+<p><strong>cd public</strong></p>
+</blockquote>
+</li>
+<li>
+<p>Execute the following command to initialize the file.</p>
+<blockquote>
+<p><strong>git init</strong></p>
+</blockquote>
+</li>
+<li>
+<p>Execute the following command to load all files.</p>
+<blockquote>
+<p><strong>git add .</strong></p>
+</blockquote>
+</li>
+<li>
+<p>Execute the following command to submit the information and add all the files to the local warehouse.</p>
+<blockquote>
+<p><strong>git commit -m</strong> &ldquo;<em>custom submission instructions</em>&rdquo;</p>
+</blockquote>
+</li>
+<li>
+<p>Execute the following command to associate the local warehouse with the warehouse on GitHub.</p>
+<blockquote>
+<p><strong>git remote add origin <a href="https://github.com/">https://github.com/</a><em><strong>github username/domain</strong></em>.git</strong></p>
+</blockquote>
+<pre><code>For Example: git remote add origin https://github.com/luluzhangmin/luluzhangmin.github.io.git
+</code></pre>
+</li>
+<li>
+<p>Execute the following command to pull the master branch.</p>
+<blockquote>
+<p><strong>git pull origin master</strong></p>
+</blockquote>
+</li>
+<li>
+<p>Execute the following command to push the master branch</p>
+<blockquote>
+<p><strong>git push -u origin master</strong></p>
+</blockquote>
+</li>
+<li>
+<p>If the first push fails, execute the following command to push the blog to the master branch.</p>
+<blockquote>
+<p><strong>git push -u origin master -f</strong></p>
+</blockquote>
+</li>
+</ol>
+<h2 id="step-3-resolve-io-domain-name">Step 3. Resolve io Domain Name</h2>
+<ol>
+<li>Search for <strong>View Network Connection</strong> in the local PC search box, press <strong>Enter</strong>.</li>
+<li>Find <strong>WLAN</strong> and right click <strong>Properties</strong>.</li>
+<li>Select <strong>Internet Protocol Version 4 (TCP/IPv4)</strong> and click <strong>Properties</strong>.</li>
+<li>Select <strong>Use the DNS server address below</strong>and enter &ldquo;8.8.8.8&rdquo; as <strong>Preferred DNS Server</strong>.</li>
+<li>Click <strong>Confirm</strong> and then click <strong>Close</strong>.</li>
+</ol>
+<h2 id="step-4-visit-blog">Step 4. Visit Blog</h2>
+<p>Enter the io address you created in the browser to access your own blog, For example, my blog address is<a href="https://luluzhangmin.github.io">https://luluzhangmin.github.io</a> .</p>
+ </div>
+    <footer class="post-footer">
+
+  <div class="post-footer-data">
+            
+<div class="tags">
+  
+</div>
+
+    <div class="date"> 2021-03-30 </div>
+    
+  </div>
+</footer>
+
+
+  
+  
+
+
+
+</article>
+
+  <footer>
+
+  <div class="social-links-footer">
+
+  
+  <a href="mailto:myemail"><div class="social-link">Email</div></a>
+  
+
+  
+  <a href="https://github.com/github%20id" target="_blank"><div class="social-link">GitHub</div></a>
+  
+
+  
+
+  
+  <a href="https://twitter.com/twitter%20id" target="_blank"><div class="social-link">Twitter</div></a>
+  
+
+  
+
+  <div class="social-link">
+  <a href="https://luluzhangmin.github.io/index.xml" target="_blank">RSS</a>
+  </div>
+
+</div>
+
+
+  <div class="copyright"> Copyright (c) 2021, all rights reserved. </div>
+
+  <div class="poweredby">
+    Powered by <a href="https://gohugo.io/">Hugo</a>.
+  </div>
+
+  </footer>
+
+</div> 
+
+</body>
+</html>
+
